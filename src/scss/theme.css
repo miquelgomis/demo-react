@@ -1,0 +1,25 @@
+:root {
+  /* Global variables */
+  --hover-transition-duration: 150ms;
+
+  /* Map variables */
+  --map-border-color: #3a0821;
+  --map-border-width: 8px;
+
+  /* Marker variables */
+  --marker-opacity-default: 0.8;
+  --marker-opacity-hover: 1;
+  --marker-zoom-default: 0.85;
+  --marker-zoom-hover: 1;
+  --marker-border-width: 4px;
+  --marker-border-color: rgba(218, 8, 8, 0.884);
+  --marker-background-color: rgba(134, 40, 40, 0.5);
+  --marker-size: 64px;
+
+  /* SVG variables */
+  --polygon-opacity-default: 0.1;
+  --polygon-opacity-hover: 1;
+  --polygon-fill: rgba(243, 6, 6, 0.2);
+  --polygon-stroke: rgba(8, 42, 133, 0.8);
+  --polygon-stroke-width: 4px;
+}

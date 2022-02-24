@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.resort {
+  border: var(--map-border-width) solid var(--map-border-color);
+  position: relative;
+  padding-top: calc((715 / 1024) * 100%);
+
+  .marker {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    transform: scale(var(--marker-zoom-default));
+    opacity: var(--marker-opacity-default);
+    transition: all var(--hover-transition-duration) ease-in-out;
+    width: var(--marker-size);
+    height: var(--marker-size);
+    background: var(--marker-background-color);
+    border: var(--marker-border-width) solid
+      var(--marker-border-color);
+    border-radius: 50%;
+    margin-top: calc(
+      (var(--marker-size) + (var(--marker-border-width) * 2)) / -2
+    );
+    margin-left: calc(
+      (var(--marker-size) + (var(--marker-border-width) * 2)) / -2
+    );
+
+    input {
+      display: block;
+      width: 0;
+      height: 0;
+    }
+
+    &:hover {
+      opacity: var(--marker-opacity-hover);
+      transform: scale(var(--marker-zoom-hover));
+    }
+  }
+
+  .image,
+  .polygon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .polygon {
+    polygon {
+      opacity: var(--polygon-opacity-default);
+      transition: all var(--hover-transition-duration) ease-in-out;
+      cursor: pointer;
+      fill: var(--polygon-fill);
+      stroke: var(--polygon-stroke);
+      stroke-width: var(--polygon-stroke-width);
+      stroke-linejoin: round;
+
+      &:hover {
+        opacity: var(--polygon-opacity-hover);
+      }
+
+      @media (max-width: 600px) {
+        opacity: var(--polygon-opacity-hover);
+      }
+    }
+  }
+}
