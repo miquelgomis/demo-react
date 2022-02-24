@@ -3,8 +3,8 @@
   --hover-transition-duration: 150ms;
 
   /* Map variables */
-  --map-border-color: #3a0821;
-  --map-border-width: 8px;
+  --map-border-color: #000000;
+  --map-border-width: 4px;
 
   /* Marker variables */
   --marker-opacity-default: 0.8;
@@ -14,7 +14,7 @@
   --marker-border-width: 4px;
   --marker-border-color: rgba(218, 8, 8, 0.884);
   --marker-background-color: rgba(134, 40, 40, 0.5);
-  --marker-size: 64px;
+  --marker-size: 24px;
 
   /* SVG variables */
   --polygon-opacity-default: 0.1;
